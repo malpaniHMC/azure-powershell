@@ -21,9 +21,9 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.PowerShell
 
     private const string ModelNamespace = @"Microsoft.Azure.PowerShell.Cmdlets.Alb.Models";
     private const string SupportNamespace = @"Microsoft.Azure.PowerShell.Cmdlets.Alb.Support";
-    private const string PropertiesExcludedForTableview = @"Id,Type";
+    private const string PropertiesExcludedForTableview = @"";
 
-    private static readonly bool IsAzure = Convert.ToBoolean(@"true");
+    private static readonly bool IsAzure = Convert.ToBoolean(@"false");
 
     protected override void ProcessRecord()
     {

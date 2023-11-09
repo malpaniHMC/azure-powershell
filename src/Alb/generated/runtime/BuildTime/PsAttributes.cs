@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 using System;
 
-namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
+namespace Sample.API
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class DescriptionAttribute : Attribute
@@ -46,6 +46,13 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         {
             Profiles = profiles;
         }
+    }
+
+    [AttributeUsage(AttributeTargets.Class)]
+    public class HttpPathAttribute : Attribute
+    {
+        public string Path { get; set; }
+        public string ApiVersion { get; set; }
     }
 
     [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
