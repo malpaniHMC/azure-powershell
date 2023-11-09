@@ -30,7 +30,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceCreateOrUpdate(string subscriptionId, string resourceGroupName, string trafficControllerName, string associationName, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -78,7 +78,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceCreateOrUpdateViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -318,7 +318,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceDelete(string subscriptionId, string resourceGroupName, string trafficControllerName, string associationName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -362,7 +362,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceDeleteViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -602,7 +602,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceGet(string subscriptionId, string resourceGroupName, string trafficControllerName, string associationName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -645,7 +645,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceGetViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -780,7 +780,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceListByTrafficController(string subscriptionId, string resourceGroupName, string trafficControllerName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociationListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -822,7 +822,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceListByTrafficControllerViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociationListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -956,7 +956,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceUpdate(string subscriptionId, string resourceGroupName, string trafficControllerName, string associationName, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociationUpdate body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1004,7 +1004,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task AssociationsInterfaceUpdateViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociationUpdate body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IAssociation>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1148,7 +1148,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceCreateOrUpdate(string subscriptionId, string resourceGroupName, string trafficControllerName, string frontendName, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1196,7 +1196,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceCreateOrUpdateViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1436,7 +1436,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceDelete(string subscriptionId, string resourceGroupName, string trafficControllerName, string frontendName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1480,7 +1480,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceDeleteViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1720,7 +1720,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceGet(string subscriptionId, string resourceGroupName, string trafficControllerName, string frontendName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1763,7 +1763,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceGetViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1898,7 +1898,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceListByTrafficController(string subscriptionId, string resourceGroupName, string trafficControllerName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontendListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -1940,7 +1940,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceListByTrafficControllerViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontendListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2074,7 +2074,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceUpdate(string subscriptionId, string resourceGroupName, string trafficControllerName, string frontendName, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontendUpdate body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2122,7 +2122,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task FrontendsInterfaceUpdateViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontendUpdate body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.IFrontend>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2261,7 +2261,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task OperationsList(global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IOperationListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2297,7 +2297,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task OperationsListViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IOperationListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2410,7 +2410,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceCreateOrUpdate(string subscriptionId, string resourceGroupName, string trafficControllerName, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2456,7 +2456,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceCreateOrUpdateViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2691,7 +2691,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceDelete(string subscriptionId, string resourceGroupName, string trafficControllerName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2733,7 +2733,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceDeleteViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task> onNoContent, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -2966,7 +2966,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceGet(string subscriptionId, string resourceGroupName, string trafficControllerName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3007,7 +3007,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceGetViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3135,7 +3135,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceListByResourceGroup(string subscriptionId, string resourceGroupName, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficControllerListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3175,7 +3175,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceListByResourceGroupViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficControllerListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3299,7 +3299,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceListBySubscription(string subscriptionId, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficControllerListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3337,7 +3337,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceListBySubscriptionViaIdentity(global::System.String viaIdentity, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficControllerListResult>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3457,7 +3457,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceUpdate(string subscriptionId, string resourceGroupName, string trafficControllerName, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficControllerUpdate body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
@@ -3503,7 +3503,7 @@ namespace Microsoft.Azure.PowerShell.Cmdlets.Alb
         /// </returns>
         public async global::System.Threading.Tasks.Task TrafficControllerInterfaceUpdateViaIdentity(global::System.String viaIdentity, Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficControllerUpdate body, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController>, global::System.Threading.Tasks.Task> onOk, global::System.Func<global::System.Net.Http.HttpResponseMessage, global::System.Threading.Tasks.Task<Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api30.IErrorResponse>, global::System.Threading.Tasks.Task> onDefault, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.IEventListener eventListener, Microsoft.Azure.PowerShell.Cmdlets.Alb.Runtime.ISendAsync sender)
         {
-            var apiVersion = @"2023-05-01-preview";
+            var apiVersion = @"2023-11-01";
             // Constant Parameters
             using( NoSynchronizationContext )
             {
