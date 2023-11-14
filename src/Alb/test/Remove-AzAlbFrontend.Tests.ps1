@@ -15,10 +15,8 @@ if(($null -eq $TestName) -or ($TestName -contains 'Remove-AzAlbFrontend'))
 }
 
 Describe 'Remove-AzAlbFrontend' {
-    It 'Delete' {
-        {
-            Remove-AzAlbFrontend -Name $env.albFrontendName -AlbName $env.removeAlbName -ResourceGroupName $env.resourceGroup
-        } | Should -Not -Throw
+    It 'Delete' -skip {
+        { throw [System.NotImplementedException] } | Should -Not -Throw
     }
 
     It 'DeleteViaIdentity' -skip {

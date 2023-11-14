@@ -19,3 +19,148 @@ This module was primarily generated via [AutoRest](https://github.com/Azure/auto
 ## Development
 For information on how to develop for `TrafficController`, see [how-to.md](how-to.md).
 <!-- endregion -->
+
+### AutoRest Configuration
+> see https://aka.ms/autorest
+
+```yaml
+
+module-version: 0.1.0
+title: Alb
+subject-prefix: $(service-name)
+inlining-threshold: 100
+resourcegroup-append: true
+nested-object-to-string: true
+
+# pin the swagger version by using the commit id instead of branch name
+commit: 1b338481329645df2d9460738cbaab6109472488
+require:
+# readme.azure.noprofile.md is the common configuration file
+  - $(this-folder)/../readme.azure.noprofile.md
+  - $(repo)/specification/servicenetworking/resource-manager/readme.md
+
+try-require: 
+  - $(repo)/specification/servicenetworking/resource-manager/readme.powershell.md
+
+# For new modules, please avoid setting 3.x using the use-extension method and instead, use 4.x as the default option
+use-extension:
+  "@autorest/powershell": "3.x"
+
+directive:
+  # Bug: https://github.com/Azure/autorest.powershell/issues/983
+  - from: source-file-csharp
+    where: $
+    transform: $ = $.replace('((Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20231101.IAssociationPropertiesInternal)Property).AssociationType = value;', '((Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20231101.IAssociationPropertiesInternal)Property).AssociationType = value ?? "";');
+  # Fix swagger issues
+  - from: swagger-document
+    where: $.definitions.TrafficControllerUpdateProperties
+    transform: delete $['properties']
+  - from: swagger-document
+    where: $.definitions.TrafficControllerUpdateProperties
+    transform: $['additionalProperties'] = true;
+  - from: swagger-document
+    where: $.tags
+    transform: '[{"name": "Associations"},{"name": "Frontends"},{"name": "TrafficController"},{"name": "Operations"}]'
+  - where:
+      subject: (.*)Interface.*
+    set:
+      subject: $1
+  # Remove the unexpanded parameter set
+  - where:
+      variant: ^Create$|^CreateViaIdentity$|^CreateViaIdentityExpanded$|^Update$|^UpdateViaIdentity$
+    remove: true
+# Param and table formatting
+  - where:
+      subject: TrafficController
+      parameter-name: TrafficControllerName
+    set:
+      parameter-name: Name
+  - where:
+      model-name: TrafficController
+    set:
+      format-table:
+        properties:
+          - Name
+          - ResourceGroupName
+          - Location
+          - ProvisioningState
+# Collapse cmdlets
+  - where:
+      subject: (.*)TrafficController
+    set:
+      subject: $1
+  - where:
+      subject: Associations
+    set:
+      subject: Association
+  - where: 
+      subject: Frontends
+    set: 
+      subject: Frontend
+# Renames for parameters continued
+  - where:
+      subject: Frontend
+      parameter-name: FrontendName
+    set:
+      parameter-name: Name
+  - where:
+      subject: Frontend
+      parameter-name: TrafficControllerName
+    set:
+      parameter-name: AlbName
+  - where:
+      subject: Association
+      parameter-name: AssociationName
+    set:
+      parameter-name: Name
+  - where:
+      subject: Association
+      parameter-name: TrafficControllerName
+    set:
+      parameter-name: AlbName
+# remove set-* related cmdlets, since they are not supported for Azure PowerShell modules.
+  - where:
+      verb: Set
+    remove: true
+# Format output
+  - where:
+      model-name: Frontend
+    set:
+      format-table:
+        properties:
+          - Name
+          - ResourceGroupName
+          - Location
+          - fqdn
+          - ProvisioningState
+  - where:
+      model-name: Association
+    set:
+      format-table:
+        properties:
+          - Name
+          - ResourceGroupName
+          - Location
+          - AssociationType
+          - SubnetId
+          - ProvisioningState
+  - where:
+      verb: New
+    set:
+      preview-announcement:
+        preview-message: Application Gateway for Containers is currently in Preview.
+  - where:
+      verb: Get
+    set:
+      preview-announcement:
+        preview-message: Application Gateway for Containers is currently in Preview.
+  - where:
+      verb: Update
+    set:
+      preview-announcement:
+        preview-message: Application Gateway for Containers is currently in Preview.
+  - where:
+      verb: Remove
+    set:
+      preview-announcement:
+        preview-message: Application Gateway for Containers is currently in Preview.

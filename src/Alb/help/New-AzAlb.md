@@ -197,11 +197,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20230501Preview.ITrafficController
+### Microsoft.Azure.PowerShell.Cmdlets.Alb.Models.Api20231101.ITrafficController
 
 ## NOTES
-
-ALIASES
 
 ## RELATED LINKS
 

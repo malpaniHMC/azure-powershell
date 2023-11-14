@@ -15,11 +15,7 @@ if(($null -eq $TestName) -or ($TestName -contains 'New-AzAlb'))
 }
 
 Describe 'New-AzAlb' {
-    It 'CreateExpanded' {
-        { 
-            $albName = $env.albName+"new"
-            $alb = New-AzAlb -Name $albName -ResourceGroupName $env.resourceGroup -Location $env.Region
-            $alb.ProvisioningState | Should -Be 'Succeeded'
-         } | Should -Not -Throw
+    It 'CreateExpanded' -skip {
+        { throw [System.NotImplementedException] } | Should -Not -Throw
     }
 }

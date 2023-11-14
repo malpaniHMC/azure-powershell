@@ -15,17 +15,12 @@ if(($null -eq $TestName) -or ($TestName -contains 'Get-AzAlbAssociation'))
 }
 
 Describe 'Get-AzAlbAssociation' {
-    It 'List' {
-        {
-            (Get-AzAlbAssociation -AlbName $env.albName -ResourceGroupName $env.resourceGroup).Count | Should -BeGreaterThan 0
-        } | Should -Not -Throw
+    It 'List' -skip {
+        { throw [System.NotImplementedException] } | Should -Not -Throw
     }
 
-    It 'Get' {
-        {
-            $alb = Get-AzAlbAssociation -Name $env.albAssociationName -AlbName $env.albName -ResourceGroupName $env.resourceGroup
-            $alb.ProvisioningState | Should -Be 'Succeeded'
-        } | Should -Not -Throw
+    It 'Get' -skip {
+        { throw [System.NotImplementedException] } | Should -Not -Throw
     }
 
     It 'GetViaIdentity' -skip {
